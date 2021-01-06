@@ -7,7 +7,7 @@ import 'package:jitney/helpers/style.dart';
 import 'package:jitney/models/route.dart';
 import 'package:jitney/services/map_requests.dart';
 import 'package:location/location.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+
 import 'package:uuid/uuid.dart';
 import 'package:geocoding/geocoding.dart';
 

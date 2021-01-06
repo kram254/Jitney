@@ -6,6 +6,7 @@ class StarsWidget extends StatelessWidget {
   const StarsWidget({Key key, this.numberOfStars,}) : super(key: key);
 
    @override
+  // ignore: missing_return
   Widget build(BuildContext context) {
     if(numberOfStars == 0){
       return Row(
