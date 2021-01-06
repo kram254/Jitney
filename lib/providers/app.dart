@@ -40,7 +40,7 @@ AppProvider.initialize(){
 }
 
 _getUserLocation() async {
-
+  
 position = await Geolocator.getCurrentPosition();
 List<Placemark> placemark = await placemarkFromCoordinates(position.latitude, position.longitude);
 _center = LatLng(position.latitude, position.longitude);

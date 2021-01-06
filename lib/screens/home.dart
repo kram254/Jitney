@@ -139,10 +139,10 @@ class _MapScreenState extends State<MapScreen> {
                     child: RaisedButton(onPressed: ()async{
                         GeoFirePoint point = GeoFirePoint(appState.center.latitude, appState.center.longitude);
                         FirebaseFirestore.instance.collection("locations").add({
-                          "points": point.data,
+                          "position": point.data,
                           "name": "Driver"
                         });
-                        print("it all worked");
+                        print("working just fine");
 
 
                     }, color: darkBlue,
