@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "892415606449",
+    "project_id": "jitney-c5065",
+    "storage_bucket": "jitney-c5065.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:892415606449:android:6f780f7590ea8a07012c90",
+        "android_client_info": {
+          "package_name": "com.example.jitney"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "892415606449-u6so7qbhes2v9qg928l02f2dn88idb39.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jitney",
+            "certificate_hash": "316e6651a1e231f1bbed6d1d77c9316b27843c0d"
+          }
+        },
+        {
+          "client_id": "892415606449-buro27n1ugbjncm027pd9gfjmor04rce.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWA9uxyha3yp5IXj7W7At6UA677yrglEM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "892415606449-buro27n1ugbjncm027pd9gfjmor04rce.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
