@@ -34,7 +34,11 @@ dependencies:
   firebase_core: ^0.5.3
   #firebase_auth: ^0.18.4+1
   firebase_auth:
+<<<<<<< HEAD
   location: ^3.2.1
+=======
+  location:
+>>>>>>> 119a6338cee98f55821da4eccfafc9d81f48c6ba
   uuid:
   google_maps_webservice:
   http:

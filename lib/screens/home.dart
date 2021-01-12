@@ -108,9 +108,13 @@ class _MapScreenState extends State<MapScreen> {
                 onMapCreated: appState.onCreate,
                 myLocationEnabled: true,
                 mapType: MapType.normal,
+<<<<<<< HEAD
                 //compassEnabled: true,
                 tiltGesturesEnabled: true,
                 compassEnabled: false,
+=======
+                compassEnabled: true,
+>>>>>>> 119a6338cee98f55821da4eccfafc9d81f48c6ba
                 markers: appState.markers,
                 onCameraMove: appState.onCameraMove,
                 polylines: appState.poly,
@@ -141,7 +145,11 @@ class _MapScreenState extends State<MapScreen> {
                     child: RaisedButton(onPressed: ()async{
                         GeoFirePoint point = GeoFirePoint(appState.center.latitude, appState.center.longitude);
                         FirebaseFirestore.instance.collection("locations").add({
+<<<<<<< HEAD
                           "position": appState.position.toJson(),
+=======
+                          "position": point.data,
+>>>>>>> 119a6338cee98f55821da4eccfafc9d81f48c6ba
                           "name": "Driver"
                         });
                         print("working just fine");

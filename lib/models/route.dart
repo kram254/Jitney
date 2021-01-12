@@ -33,4 +33,8 @@ class Duration {
     text = data["text"];
     value = data["value"];
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 119a6338cee98f55821da4eccfafc9d81f48c6ba

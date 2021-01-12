@@ -7,7 +7,11 @@ import 'package:jitney/helpers/style.dart';
 import 'package:jitney/models/route.dart';
 import 'package:jitney/services/map_requests.dart';
 import 'package:location/location.dart';
+<<<<<<< HEAD
 import 'package:cloud_firestore/cloud_firestore.dart';
+=======
+
+>>>>>>> 119a6338cee98f55821da4eccfafc9d81f48c6ba
 import 'package:uuid/uuid.dart';
 import 'package:geocoding/geocoding.dart';
 
@@ -24,16 +28,25 @@ static LatLng _center;
 LatLng _lastPosition = _center;
 TextEditingController _locationController = TextEditingController();
 TextEditingController destinationController = TextEditingController();
+<<<<<<< HEAD
 LatLng get center =>  _center;
 LatLng get lastPosition => _lastPosition;
 //bool _hasLocationPermission;
 //bool _isLocationEnabled;
+=======
+
+LatLng get center =>  _center;
+ LatLng get lastPosition => _lastPosition;
+bool _hasLocationPermission;
+bool _isLocationEnabled;
+>>>>>>> 119a6338cee98f55821da4eccfafc9d81f48c6ba
 TextEditingController get locationController => _locationController;
 Set<Marker> get markers => _markers;
 Set<Polyline> get poly => _poly;
 GoogleMapController get mapController => _mapController;
 RouteModel routeModel;
 
+<<<<<<< HEAD
 //Location location  = new Location();
 
 
@@ -48,12 +61,18 @@ AppProvider(){
     });
   }
 
+=======
+>>>>>>> 119a6338cee98f55821da4eccfafc9d81f48c6ba
 AppProvider.initialize(){
   _getUserLocation();
 }
 
 _getUserLocation() async {
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 119a6338cee98f55821da4eccfafc9d81f48c6ba
 position = await Geolocator.getCurrentPosition();
 List<Placemark> placemark = await placemarkFromCoordinates(position.latitude, position.longitude);
 _center = LatLng(position.latitude, position.longitude);
@@ -73,9 +92,13 @@ setLastPosition(LatLng position){
 }
 
 onCameraMove(CameraPosition position) {
+<<<<<<< HEAD
   print("driver moving");
     _lastPosition = position.target;
     notifyListeners();
+=======
+    _lastPosition = position.target;
+>>>>>>> 119a6338cee98f55821da4eccfafc9d81f48c6ba
 }
 
 _addLocationMarker(LatLng position, String destination, String distance) {
@@ -90,7 +113,10 @@ _addLocationMarker(LatLng position, String destination, String distance) {
           notifyListeners();
   }
 
+<<<<<<< HEAD
 /*** 
+=======
+>>>>>>> 119a6338cee98f55821da4eccfafc9d81f48c6ba
 void _addDriverMarker(LocationData newLocalData, Uint8List imageData) {
     LatLng latlng = LatLng(newLocalData.latitude, newLocalData.longitude);
     var uuid = new Uuid();
@@ -105,7 +131,10 @@ void _addDriverMarker(LocationData newLocalData, Uint8List imageData) {
         anchor: Offset(0.5, 0.5),
         icon: BitmapDescriptor.fromBytes(imageData)));
   }
+<<<<<<< HEAD
   */
+=======
+>>>>>>> 119a6338cee98f55821da4eccfafc9d81f48c6ba
 
   void sendRequest({String intendedLocation, LatLng coordinates}) async {
       LatLng destination = coordinates;

@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 import 'package:firebase_core/firebase_core.dart';
+=======
+>>>>>>> 119a6338cee98f55821da4eccfafc9d81f48c6ba
 import 'package:flutter/material.dart';
 //import 'package:geolocator/geolocator.dart';
 import 'package:jitney/screens/home.dart';
@@ -14,6 +17,7 @@ WidgetsFlutterBinding.ensureInitialized();
     providers: [
     ChangeNotifierProvider.value(value: AppProvider.initialize())
   ],
+<<<<<<< HEAD
     child:MaterialApp(
       debugShowCheckedModeBanner: false,
         theme: ThemeData(
@@ -21,10 +25,14 @@ WidgetsFlutterBinding.ensureInitialized();
         ),
         title: "J!tney",
         home: MyApp()),
+=======
+    child: MyApp(),
+>>>>>>> 119a6338cee98f55821da4eccfafc9d81f48c6ba
   ));
 }
 
 class MyApp extends StatelessWidget {
+<<<<<<< HEAD
   final Future<FirebaseApp> _initialization = Firebase.initializeApp();
 
   @override
@@ -59,6 +67,21 @@ class MyApp extends StatelessWidget {
     );
   }
 
+=======
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'J!tney',
+      theme: ThemeData(
+        primarySwatch: Colors.red,
+      ),
+      home: HomeScreen(title: 'J!tney'),
+    );
+  }
+
+
+>>>>>>> 119a6338cee98f55821da4eccfafc9d81f48c6baz
 /*** 
 SharedPreferences prefs = await SharedPreferences.getInstance();
 LocationPermission permission = await Geolocator.checkPermission();
